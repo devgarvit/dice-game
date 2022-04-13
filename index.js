@@ -1,10 +1,10 @@
 var randomNumber1 = Math.floor(Math.random() * 6) + 1;
 var randomDiceImage = "dice" + randomNumber1 + ".png";
-var randomimageSource = "images/" + randomDiceImage;
-document.querySelectorAll("img")[0].setAttribute("src", randomimageSource);
+
+document.querySelectorAll("img")[0].setAttribute("src", randomDiceImage);
 
 var randomNumber2 = Math.floor(Math.random() * 6) + 1; //1-6
-var randomDiceImage1 = "images/dice" + randomNumber2 + ".png";//dice1-dice6
+var randomDiceImage1 = "dice" + randomNumber2 + ".png";//dice1-dice6
 document.querySelectorAll("img")[1].setAttribute("src", randomDiceImage1);//static to dymanic image
 
 if(randomNumber1>randomNumber2){
